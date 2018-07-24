@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loadRoomsAndLoadMessagesAction should invoke actions correctly 1`] = `
+Array [
+  Object {
+    "type": "ROOMS_FETCH_START",
+  },
+  Object {
+    "payload": Object {
+      "data": Array [
+        Object {
+          "id": "1",
+          "participants": Array [
+            "Alice",
+            "Charlie",
+          ],
+        },
+        Object {
+          "id": "2",
+          "participants": Array [
+            "Bob",
+            "Charlie",
+          ],
+        },
+        Object {
+          "id": "3",
+          "participants": Array [
+            "Alice",
+            "Bob",
+            "Charlie",
+          ],
+        },
+      ],
+    },
+    "type": "ROOMS_FETCH_SUCCESS",
+  },
+  Object {
+    "payload": Object {
+      "index": 0,
+    },
+    "type": "ROOMS_SELECT",
+  },
+  Object {
+    "type": "MESSAGES_FETCH_START",
+  },
+  Object {
+    "payload": Object {
+      "data": Array [
+        Object {
+          "created": "1532432201308",
+          "id": "1",
+          "message": "Hi Bob!",
+          "sender": "Alice",
+        },
+        Object {
+          "created": "1532432212345",
+          "id": "2",
+          "message": "Hi Alice!",
+          "sender": "Bob",
+        },
+        Object {
+          "created": "1532432501308",
+          "id": "3",
+          "message": "Hi Bob!",
+          "sender": "Alice",
+        },
+        Object {
+          "created": "1532432812345",
+          "id": "4",
+          "message": "Hi Alice!",
+          "sender": "Bob",
+        },
+      ],
+    },
+    "type": "MESSAGES_FETCH_SUCCESS",
+  },
+]
+`;
